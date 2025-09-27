@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Cloudflare AI Chat (Workers AI + DO Memory)</title>
+  <link rel="stylesheet" href="/style.css"/>
+</head>
+<body>
+  <div class="app">
+    <header>
+      <h1>Cloudflare AI Chat</h1>
+      <p>Workers AI • Durable Objects • Voice input (optional)</p>
+    </header>
+
+    <main id="chat"></main>
+
+    <form id="chat-form">
+      <input id="user-input" type="text" placeholder="Type your message..." autocomplete="off"/>
+      <button type="button" id="mic-btn" title="Voice input (Web Speech API)">🎤</button>
+      <button type="submit">Send</button>
+    </form>
+  </div>
+
+  <script src="/script.js"></script>
+</body>
+</html>
