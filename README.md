@@ -1,4 +1,13 @@
+<p align="center">
+  <img src="https://www.reuters.com/resizer/v2/L6HJNOYJD5LC5CLJ3NWU7O7KEE.jpg?auth=6608255b30bd37843c2c9a0d9a289a6b34ec272569d8da514a5605c42d863bda&width=1200&quality=80" width="500" alt="Cloudflare Logo"/>
+</p>
+
+
+
 # cf_ai_agents_memory_demo
+
+> **Application Assignment:** AI-powered app for the Cloudflare internship review process.  
+
 
 An **AI-powered Cloudflare app** demonstrating:
 - **LLM**: Cloudflare Workers AI (Llama 3.x Instruct).
@@ -6,7 +15,6 @@ An **AI-powered Cloudflare app** demonstrating:
 - **User input**: **Chat UI** on **Pages** with **optional voice** (Web Speech API).
 - **Memory/state**: **Durable Object** stores per-session conversation history + lightweight long-term memory.
 
-> This repository is intentionally minimal, deployable, and easy to review.
 
 ---
 
@@ -30,7 +38,6 @@ Pages (frontend) ──▶ Worker (HTTP API)
 - **Coordination**:
   - The Worker acts as the orchestrator: it fetches memory from `MemoryDO`, builds the prompt, calls LLM, updates memory.
 
-> You can extend this to use **Cloudflare Workflows** later; the current orchestration via Worker + DO satisfies the “Workflow/coordination” requirement.
 
 ---
 
@@ -128,20 +135,6 @@ No secrets required for the base demo.
 
 ---
 
-## Originality
-
-All code in this repository is **original** for this assignment. AI assistance was used for scaffolding and documentation quality. See **PROMPTS.md** for prompt history.
-
----
-
-## Rename the repository
-
-The assignment requires the repo name to be prefixed with `cf_ai_`.
-
-If you download this zip and push to your GitHub:
-- Name it, e.g., `cf_ai_agents_memory_demo` (already follows the rule).
-
----
 
 ## License
 
